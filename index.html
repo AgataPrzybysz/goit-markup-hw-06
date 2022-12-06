@@ -62,9 +62,46 @@
               <svg width="11" height="11">
                 <use href="./images/sprite/icons.svg#icon-x"></use>
               </svg>
+            </button></div>
+            <div class="modal-box">
+            <p class="modal-description">Zostaw swoje dane w formularzu poniżej</p>
+            <form class="modal-form" name="modal-form">
+                <label for="name" class="modal-label">Imię</label>
+                    <span class="input-box">
+                    <input class="input-modal" type="text" id="name" />
+                    <svg class="form-icon" wight="18" height="18">
+                      <use href="./images/sprite/icons.svg#icon-person-black-18dp"></use>
+                    </svg>
+                  </span>
+                  <label for="phone" class="modal-label">Telefon</label>
+                    <span class="input-box">
+                    <input class="input-modal" type="number" id="phone" />
+                    <svg class="form-icon" wight="18" height="18">
+                      <use href="./images/sprite/icons.svg#icon-phone-black-18dp"></use>
+                    </svg>
+                  </span>
+                  <label for="e-mail" class="modal-label">Email</label>
+                    <span class="input-box">
+                    <input class="input-modal" type="text" id="e-mail" />
+                    <svg class="form-icon" wight="18" height="18">
+                      <use href="./images/sprite/icons.svg#icon-email-black-18dp"></use>
+                    </svg>
+                  </span>
+
+                  <label for="textarea" class="modal-label">Komentarz</label>
+                  <span class="input-box">
+                    <textarea class="textarea" id="textarea" name="textarea" type="text" placeholder="Wprowadź tekst"></textarea>
+                  </span>
+                  <label for="check" class="checkbox-label">
+                    <input type="checkbox" class="checkbox" id="check" />
+                    <span class="checkbox-icon">
+                    <svg class="icon-check" width="16" height="15"><use href="./images/sprite/icons.svg#icon-check"></use></svg>
+                    <span class="rules">Oświadczam iż akceptuję <span><a href="">Regulamin</a></span> i <span><a href="">Politykę Prywatności.</a></span></span>
+                    </span>
+                  </label>
+                  <button class="check-btn" type="submit">Wyślij</button>
+            </form>
             </div>
-            </button>
-          </div>
           </div>
         </div>
       </section>
@@ -454,6 +491,15 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form name="newsletter" class="newsletter">
+            <label for="user" class="footer-description label">zapisz się do newslettera</label>
+          <input id="user" type="text" name="email" placeholder="E-mail" class="input" />
+          <button type="submit" class="newsletter-btn">Zapisz się<span>
+            <svg class="icon-send" width="24" height="24">
+            <use href="./images/sprite/icons.svg#icon-send"></use></svg></span></button>
+          </form>
         </div>
       </section>
     </footer>
